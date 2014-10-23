@@ -25,7 +25,6 @@ This is a quick and dirty script to automate repeated task of creating a AWS S3 
 You need to have AWS account and dnsimple.com account.
 Use at your own peril.
 
-```
 
 ### References
 
@@ -40,7 +39,7 @@ Use at your own peril.
 
 #### MIT License
 
-Copyright &copy; 2013 Jaime Pillora &lt;dev@jpillora.com&gt;
+Copyright &copy; 2014 noos &lt;jun@noos.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
