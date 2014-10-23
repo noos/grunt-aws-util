@@ -1,0 +1,41 @@
+{
+  "name": "grunt-aws-util",
+  "description": "Customized Grunt interface to expose Amazon S3 bucket as dnsimple CNAME record",
+  "version": "0.0.1",
+  "homepage": "https://github.com/noos/grunt-aws-util",
+  "author": {
+    "name": "noos",
+    "email": "jun@noos.com",
+    "url": "http://noos.com"
+  },
+  "maintainers": [
+    {
+      "name": "jun@noos.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noos/grunt-aws-util"
+  },
+  "bugs": {
+    "url": "https://github.com/noos/grunt-aws-util/issues"
+  },
+  "licenses": "MIT",
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin",
+    "deploy",
+    "amazon",
+    "aws",
+    "s3",
+    "dnsimple"
+  ],
+  "dependencies": {
+    "async": "~0.2.9",
+    "lodash": "~1.3.1",
+    "aws-sdk": "~1.12.0"
+  },
+  "readmeFilename": "README.md"
+}
