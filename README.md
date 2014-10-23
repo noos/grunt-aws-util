@@ -1,4 +1,4 @@
-# grunt-aws
+# grunt-aws-util
 
 Customized Grunt interface to expose Amazon S3 bucket as dnsimple CNAME record,
 
