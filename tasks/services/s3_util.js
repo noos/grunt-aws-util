@@ -131,14 +131,22 @@ module.exports = function(grunt) {
 
     function deleteBucket(callback) {
       var params = {
-            // Bucket: opts.bucket,
             Bucket: bucket_name,
           };
+
+      grunt.log.writeln('Deleting bucket ' + bucket_name + '...');
+      S3.deleteBucket(params, function(err, data){
+        if(err) return callback(err);
+        console.log(data);
+        callback();
+      });
+
+      // prompt based safe version
+      /*
       if (!confirm_bucket_name || confirm_bucket_name !== bucket_name) {
         grunt.log.warn('Bucket name must be specified, like s3_util:delete_bucket:BucketNameGoesHere.');
         callback();
       } else {
-
         grunt.log.writeln('Deleting bucket ' + bucket_name + '...');
         S3.deleteBucket(params, function(err, data){
           if(err) return callback(err);
@@ -147,6 +155,7 @@ module.exports = function(grunt) {
           callback();
         });
       } //else
+      */
     } //deleteBucket
 
 
